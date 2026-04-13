@@ -12,6 +12,10 @@ def remove_task(index):
     if 0 <= index < len(tasks):
         removed = tasks.pop(index)
         print(f"Задача '{removed}' удалена.")
+
+def clear_tasks():
+    tasks.clear()
+    print("Список очищен.")
 if __name__ == "__main__":
     add_task("Настроить Git")
     show_tasks()
